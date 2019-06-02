@@ -1,0 +1,37 @@
+.card nav ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 10px 0px;
+  padding: 0px;
+  border-bottom: 1px solid rgb(221, 221, 221);
+}
+
+.card nav li {
+  display: inline-block;
+  padding: 3px 0px;
+  width: 100%;
+  text-align: center;
+  color: white;
+  font-weight: 1000;
+}
+
+.slider {
+  position: relative;
+  top: 0px;
+  background-color: rgb(226, 226, 226);
+  height: 2px;
+  width: 100%;
+  transition: 0.5s all ease-in-out;
+}
+
+.card nav li:hover {
+  cursor: pointer;
+  color: rgb(202, 201, 201);
+}
+
+.card nav li.active {
+  color: white;
+}
+
+/* .card li.item {
+} */

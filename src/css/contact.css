@@ -1,0 +1,50 @@
+#contact {
+  background-color: rgb(31, 30, 30);
+  color: white;
+  height: 80px;
+}
+
+#contact .contactrow {
+  display: flex;
+  justify-content: center;
+}
+
+#contact .contactrow ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+#contact .group {
+  margin: auto 10px;
+}
+
+#contact .group:hover {
+  text-shadow: 0px 0px 3px #eee;
+  cursor: pointer;
+}
+
+#contact .group:hover > img {
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.19);
+}
+#contact .contactrow ul li {
+  display: inline-block;
+  margin-left: 15px;
+  font-weight: 800;
+}
+
+#contact .group img {
+  width: 23px !important;
+  margin-left: 5px;
+  height: 23px !important;
+  float: left;
+  filter: brightness(0) invert(1);
+}
+
+@media (max-width: 380px) {
+  #contact .group img {
+    display: none;
+  }
+  #contact .contactrow {
+    margin: 0px 30px;
+  }
+}

@@ -1,0 +1,191 @@
+#landing {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  background: linear-gradient(45deg, #ee2416, #2ec1f7, #f33980, #e0f003);
+  animation: Gradient 15s ease infinite;
+  background-size: 400% 400%;
+  color: white;
+  margin-bottom: -7vh;
+}
+
+@keyframes Gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+#landing::after {
+  display: block;
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 8vh;
+  top: 67%;
+  background: transparent;
+}
+
+#landing h1 {
+  position: relative;
+  font-size: 60px;
+  animation-name: landingh1;
+  animation-duration: 2.7s;
+  filter: blur(4px);
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+  letter-spacing: 2px;
+  font-weight: 500;
+  margin: 0px;
+}
+
+#landing .secondary {
+  font-size: 3.3vh;
+  margin: 4vh 0px;
+}
+
+@keyframes landingh1 {
+  to {
+    filter: blur(0px);
+  }
+}
+
+.fade-in {
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  height: 22vh;
+  top: 0px;
+  animation-name: fade;
+  animation-duration: 1.5s;
+  animation-fill-mode: forwards;
+  animation-timing-function: cubic-bezier(1, 0, 0.91, 0.59);
+  animation-delay: 1.8s;
+  width: 0px;
+  overflow: hidden;
+}
+
+#landing nav ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin: 10px 0px;
+  padding: 0px;
+}
+
+#landing nav li::before {
+  content: '';
+  display: block;
+  width: 80%;
+  margin: 10px auto;
+  border-bottom: 2px solid #5fd5fc;
+}
+#landing nav li {
+  display: inline-block;
+  padding: 3px 0px;
+  width: 100%;
+  text-align: center;
+  font-size: 22px;
+  letter-spacing: 1px;
+  font-weight: 900;
+}
+
+#landing img {
+  display: block;
+  height: 50px;
+  max-width: 50px;
+  margin: 0 auto;
+  filter: brightness(0) invert(1);
+}
+
+#landing .group {
+  margin: 0 auto;
+  transition: 0.2s ease-in;
+}
+
+#landing .group:hover {
+  cursor: pointer;
+  filter: brightness(0) invert(0);
+  transition: 0.2s ease-in;
+}
+
+@keyframes fade {
+  0% {
+    border-radius: 50%;
+    width: 0px;
+    overflow: hidden;
+  }
+
+  100% {
+    overflow: visible;
+    border-radius: 0;
+    width: 40vw;
+  }
+}
+
+@media (max-width: 1000px) {
+  .fade-in {
+    position: relative;
+    left: -8%;
+  }
+
+  #landing nav li {
+    font-size: 17px;
+  }
+
+  #landing h1 {
+    font-size: 40px;
+    margin-top: 0px;
+  }
+  @keyframes fade {
+    0% {
+      border-radius: 50%;
+      width: 0px;
+    }
+
+    100% {
+      border-radius: 0;
+      width: 80vw;
+    }
+  }
+}
+
+@media (max-width: 420px) {
+  #landing nav ul {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  #landing nav li {
+    font-size: 15px;
+  }
+
+  #landing h1 {
+    font-size: 4vh;
+  }
+  #landing .secondary {
+    font-size: 2.5vh;
+  }
+
+  #landing nav img {
+    height: 40px;
+  }
+
+  #landing .group {
+    margin: 10px;
+  }
+
+  #landing .fade-in {
+    height: 45vh;
+    left: -5%;
+  }
+
+  #landing .container {
+    width: 75%;
+  }
+}
