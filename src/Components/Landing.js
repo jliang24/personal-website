@@ -28,30 +28,32 @@ class Landing extends Component {
                     onClick={() => this.scrollToRef(appRefs.projectRef.current)}
                     className="group"
                   >
-                    <img src={require('../Assets/project_icon.svg')} />
+                    <img alt="" src={require('../Assets/project_icon.svg')} />
                     <li>Projects</li>
                   </div>
                   <a
                     className="group"
                     href="https://github.com/jliang24"
                     target="_blank"
+                    rel="noopener noreferrer"
                   >
-                    <img src={require('../Assets/github_icon.png')} />
+                    <img alt="" src={require('../Assets/github_icon.png')} />
                     <li>Github</li>
                   </a>
                   <a
                     className="group"
                     target="_blank"
+                    rel="noopener noreferrer"
                     href={require('../Assets/Liang Resume Portfolio.pdf')}
                   >
-                    <img src={require('../Assets/resume_icon.png')} />
+                    <img alt="" src={require('../Assets/resume_icon.png')} />
                     <li>Resume</li>
                   </a>
                   <div
                     onClick={() => this.scrollToRef(appRefs.contactRef.current)}
                     className="group"
                   >
-                    <img src={require('../Assets/contact_icon.png')} />
+                    <img alt="" src={require('../Assets/contact_icon.png')} />
                     <li>Contact</li>
                   </div>
                 </ul>

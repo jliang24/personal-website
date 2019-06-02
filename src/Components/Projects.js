@@ -32,7 +32,7 @@ class Projects extends Component {
         <h1 className="underline">Projects</h1>
         <div id="card-group" className="container">
           <div className="card">
-            <img src={require('../Assets/Noteskeeper Demo.jpg')} />
+            <img alt="" src={require('../Assets/Noteskeeper Demo.jpg')} />
             <h2>Noteskeeper</h2>
             <NavBar
               content={'Noteskeeper'}
@@ -48,7 +48,7 @@ class Projects extends Component {
             />
           </div>
           <div className="card">
-            <img src={require('../Assets/Listing Demo.jpg')} />
+            <img alt="" src={require('../Assets/Listing Demo.jpg')} />
             <h2>Airbnb Clone</h2>
             <NavBar
               content={'Airbnb'}
@@ -64,7 +64,7 @@ class Projects extends Component {
             />
           </div>
           <div className="card">
-            <img src={require('../Assets/Weather Demo.jpg')} />
+            <img alt="" src={require('../Assets/Weather Demo.jpg')} />
             <h2>Weather App</h2>
             <NavBar
               content={'Weather'}

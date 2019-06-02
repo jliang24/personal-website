@@ -9,16 +9,16 @@ class ProjectLinks extends Component {
         <hr />
         <p>
           <strong>Website:</strong>
-          <a target="_blank" href={webLink}>
+          <a rel="noopener noreferrer" target="_blank" href={webLink}>
             {webName}
-            <img src={webIco} />
+            <img alt="" src={webIco} />
           </a>
         </p>
         <p>
           <strong>Github:</strong>
-          <a target="_blank" href={gitLink}>
+          <a rel="noopener noreferrer" target="_blank" href={gitLink}>
             jliang24
-            <img src={require('../../Assets/github_icon.png')} />
+            <img alt="" src={require('../../Assets/github_icon.png')} />
           </a>
         </p>
       </div>

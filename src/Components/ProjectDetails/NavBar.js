@@ -13,6 +13,8 @@ class NavBar extends Component {
           return { left: '33%' };
         case 'Stack':
           return { left: '66%' };
+        default:
+          return {};
       }
     };
 
