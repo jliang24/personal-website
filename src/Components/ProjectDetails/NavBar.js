@@ -10,9 +10,9 @@ class NavBar extends Component {
         case 'Summary':
           return { left: '0%' };
         case 'Features':
-          return { left: '33%' };
+          return { left: '100%' };
         case 'Stack':
-          return { left: '66%' };
+          return { left: '200%' };
         default:
           return {};
       }
