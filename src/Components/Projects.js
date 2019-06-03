@@ -32,22 +32,6 @@ class Projects extends Component {
         <h1 className="underline">Projects</h1>
         <div id="card-group" className="container">
           <div className="card">
-            <img alt="" src={require('../Assets/Noteskeeper Demo.jpg')} />
-            <h2>Noteskeeper</h2>
-            <NavBar
-              content={'Noteskeeper'}
-              changeContentType={this.changeContentType}
-              currentlySelected={this.state.Noteskeeper}
-            />
-            {Noteskeeper(this.state.Noteskeeper)}
-            <ProjectLinks
-              webName="Noteskeeper"
-              webLink={'https://noteskeeper.herokuapp.com/'}
-              gitLink={'https://github.com/jliang24/Noteskeeper'}
-              webIco={require('../Assets/Airbnb.ico')}
-            />
-          </div>
-          <div className="card">
             <img alt="" src={require('../Assets/Listing Demo.jpg')} />
             <h2>Airbnb Clone</h2>
             <NavBar
@@ -60,6 +44,22 @@ class Projects extends Component {
               webName="Airbnb"
               webLink={'https://airbnb-clone-jeff.herokuapp.com/'}
               gitLink={'https://github.com/jliang24/airbnb_clone'}
+              webIco={require('../Assets/Airbnb.ico')}
+            />
+          </div>
+          <div className="card">
+            <img alt="" src={require('../Assets/Noteskeeper Demo.jpg')} />
+            <h2>Noteskeeper</h2>
+            <NavBar
+              content={'Noteskeeper'}
+              changeContentType={this.changeContentType}
+              currentlySelected={this.state.Noteskeeper}
+            />
+            {Noteskeeper(this.state.Noteskeeper)}
+            <ProjectLinks
+              webName="Noteskeeper"
+              webLink={'https://noteskeeper.herokuapp.com/'}
+              gitLink={'https://github.com/jliang24/Noteskeeper'}
               webIco={require('../Assets/Airbnb.ico')}
             />
           </div>

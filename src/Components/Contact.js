@@ -23,7 +23,10 @@ class Contact extends Component {
               href="mailto:jeffliang@nevada.unr.edu?subject=Portfolio+Message"
               className="group"
             >
-              <img alt="" src={require('../Assets/email_icon.svg')} />
+              <img
+                alt="require('../Assets/email_icon.svg')"
+                src={require('../Assets/email_icon2.png')}
+              />
               <li>Email</li>
             </a>
             <a
