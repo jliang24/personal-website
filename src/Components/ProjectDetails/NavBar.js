@@ -10,9 +10,9 @@ class NavBar extends Component {
         case 'Summary':
           return { left: '0%' };
         case 'Features':
-          return { left: '100%' };
+          return { left: '33%' };
         case 'Stack':
-          return { left: '200%' };
+          return { left: '67%' };
         default:
           return {};
       }
@@ -32,8 +32,8 @@ class NavBar extends Component {
           <li className={activeItem('Summary')}>Summary</li>
           <li className={activeItem('Features')}>Features</li>
           <li className={activeItem('Stack')}>Stack</li>
-          <div style={moveLeftSlider()} className="slider" />
         </ul>
+        <div style={moveLeftSlider()} className="slider" />
       </nav>
     );
   }

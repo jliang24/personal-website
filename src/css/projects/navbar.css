@@ -17,11 +17,12 @@
 
 .slider {
   position: relative;
-  top: 0px;
+  margin-top: -12px;
   background-color: rgb(226, 226, 226);
   height: 2px;
-  width: 100%;
   transition: 0.5s all ease-in-out;
+  width: 33%;
+  margin-bottom: 10px;
 }
 
 .card nav li:hover {
