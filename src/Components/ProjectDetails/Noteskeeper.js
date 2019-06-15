@@ -17,11 +17,12 @@ export default contentType => {
     return (
       <div className="navContent">
         <ul className="features">
-          <li>CRUD operations on notes/boards </li>
+          <li>Responsive Design</li>
           <li>Building a REST API for consuming data</li>
           <li>React Beautiful DND integration</li>
           <li>Authetication (Google OAuth)</li>
           <li>Form Validation with Redux-Form</li>
+          <li>CRUD operations on notes/boards </li>
         </ul>
       </div>
     );

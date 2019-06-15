@@ -20,12 +20,13 @@ export default contentType => {
     return (
       <div className="navContent">
         <ul className="features">
-          <li>CRUD operations on listings</li>
+          <li>Responsive design</li>
           <li>Messaging/Inbox system</li>
           <li>Building a REST API for consuming data</li>
           <li>Google Maps integration for displaying addresses</li>
           <li>Authetication (JSON Web Tokens)</li>
           <li>AWS Buckets for storing pictures</li>
+          <li>CRUD operations on listings</li>
         </ul>
       </div>
     );

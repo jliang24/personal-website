@@ -14,7 +14,7 @@ class Landing extends Component {
 
     return (
       <>
-        <section id="landing">
+        <header id="landing">
           <div className="container">
             <h1>Hi! I'm Jeff Liang, a web developer.</h1>
             <h1 className="secondary">
@@ -60,7 +60,7 @@ class Landing extends Component {
               </nav>
             </div>
           </div>
-        </section>
+        </header>
       </>
     );
   }
